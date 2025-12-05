@@ -7,8 +7,6 @@ A production-ready appointment booking system built with C# .NET 8 featuring com
 ### Authentication & Security
 - **User Registration** with email validation and password requirements
 - **JWT Authentication** with access tokens and refresh tokens
-- **Email Verification** with expiring tokens (24 hours)
-- **Password Reset** functionality with secure tokens (1 hour expiry)
 - **Password Hashing** using bcrypt with cost factor 12
 - **Session Management** with auto-expiration and multiple device support
 - **Account Lockout** after 5 failed login attempts (15 minutes)
@@ -29,10 +27,6 @@ A production-ready appointment booking system built with C# .NET 8 featuring com
 | POST | `/register` | Register a new user |
 | POST | `/login` | Login with credentials |
 | POST | `/logout` | Logout current session |
-| POST | `/refresh` | Refresh access token |
-| POST | `/verify-email` | Verify email address |
-| POST | `/forgot-password` | Request password reset |
-| POST | `/reset-password` | Reset password with token |
 
 #### Users (`/api/users`)
 | Method | Endpoint | Description |
